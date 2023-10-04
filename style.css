@@ -1,0 +1,65 @@
+
+
+.header{
+    margin-left: 600px;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #2c1a8e;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+    gap: 10px;
+    margin: 20px auto;
+    width: 320px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: #5047c9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #ceb7b7;
+}
+
+.cell[data-cell="X"],
+.cell[data-cell="O"] {
+    pointer-events: none;
+    background-color: #eee;
+    color: #050303;
+}
+
+#message {
+    margin: 10px auto;
+    font-size: 24px;
+    color: #671515;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #0f0505;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
